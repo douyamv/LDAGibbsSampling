@@ -18,9 +18,9 @@ import liuyang.nlp.lda.conf.PathConfig;
 
 public class LdaModel {
 	
-	int [][] doc;//word index array
+	int [][] doc;//word index array 每一篇文档中每一个词在词典里的id
 	int V, K, M;//vocabulary size, topic number, document number
-	int [][] z;//topic label array
+	int [][] z;//topic label array 每一篇文档中每一个词所属的主题id
 	float alpha; //doc-topic dirichlet prior parameter 
 	float beta; //topic-word dirichlet prior parameter
 	int [][] nmk;//given document m, count times of topic k. M*K
